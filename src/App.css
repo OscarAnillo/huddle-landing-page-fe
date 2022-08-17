@@ -7,9 +7,10 @@
 
 .App {
   text-align: center;
-  min-height: 100vh;
+  height: 100vh;
   background-color: hsl(257, 40%, 49%);
   background-image: url('/public/images/bg-mobile.svg');
+  background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
   background-origin: border-box;
@@ -46,6 +47,7 @@ img {
 }
 
 /* Text component */
+
 .text {
   margin-top: 50px;
 }
@@ -87,4 +89,82 @@ img {
   border-radius: 100px;
   padding: 10px 3px;
   margin: 0 .5em;
+}
+
+@media(min-width: 1024px) {
+  .App {
+    background-image: url('/public/images/bg-desktop.svg');
+    background-size: cover;
+    background-position: center;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+    max-width: 1024px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+  }
+
+  .row > div {
+    min-width: 50%;
+    height: 610px;
+  }
+  
+  /* Image component  */
+  .img-box img {
+    width: 40%;
+    padding-bottom: 50px;
+  }
+  .img-box .img-bg {
+    background-image: url('/public/images/illustration-mockups.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 370px;
+    width: 100%;
+  }
+  
+  /* Text component */
+  
+  .text {
+    margin-top: 120px;
+    text-align: left;
+    padding-left: 2em;
+  }
+  
+  .text h1 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+  }
+  .text p {
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 2em;
+  }
+  .text button {
+    width: 40%;
+    padding: 1.2em 2em;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 3px 5px 20px rgb(45, 35, 68);
+    margin-bottom: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .text div {
+    width: 100%;
+    margin: 4em auto 0px auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .fb, .tr, .ig {
+    width: 40px;
+    padding: 15px 3px;
+  }
+  
 }

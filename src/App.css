@@ -13,10 +13,30 @@
   background-origin: border-box;
   position: relative;
 }
+img {
+  width: 100%;
+}
+
 .container {
   border: 1px solid red;
   margin: auto;
   width: 90%;
+  max-width: 375px;
   position: relative;
-  top: 60px
+  top: 30px
+}
+.img-box {
+  text-align: left;
+}
+.img-box img {
+  width: 40%;
+  padding-bottom: 30px;
+}
+.img-box .img-bg {
+  background-image: url('/public/images/illustration-mockups.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30vh;
+  width: 100%;
 }

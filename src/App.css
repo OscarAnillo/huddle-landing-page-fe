@@ -5,4 +5,18 @@
 
 .App {
   text-align: center;
+  min-height: 100vh;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url('/public/images/bg-mobile.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  position: relative;
+}
+.container {
+  border: 1px solid red;
+  margin: auto;
+  width: 90%;
+  position: relative;
+  top: 60px
 }
